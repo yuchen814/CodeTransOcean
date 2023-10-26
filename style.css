@@ -1,0 +1,326 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-size: larger;
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+ul,
+li,
+ol {
+  padding-inline-start: 0%;
+  padding-block-start: 0%;
+  margin-block-start: 0%;
+  margin-inline-start: 0%;
+  list-style: none;
+}
+
+.main {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 50%;
+  line-height: 50%;
+  background-color: #003466;
+
+  color: white;
+}
+
+.header-main {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 50%;
+  float: left;
+  height: 50;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.logo a {
+  vertical-align: middle;
+  color: white;
+  font-size: 25px;
+}
+
+.nav {
+  float: right;
+  width: 50%;
+  height: 50px;
+}
+
+.nav ul {
+  width: 100%;
+  height: 50px;
+}
+
+.nav ul li {
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  vertical-align: middle;
+}
+
+.nav ul li a {
+  color: lightgrey;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.nav ul li a:hover {
+  color: white;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 25px 0px;
+}
+
+.details {
+  text-indent: 2em;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.links {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.links ul {
+  width: 60%; /* 4个框 整体宽度 */
+  height: 30px;
+  line-height: 30px;
+  /* margin: 0 auto; */
+}
+
+.links ul li {
+  width: 20%;
+  float: left;
+  height: 30px; /* 框高度，height  line-height  都调整成一样的  下面的花括号里也是保持一致 */
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.links ul li a {
+  color: black;
+  font-size: 10px; /* 框内文本大小 */
+  line-height: 60px;
+  height: 60px;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.links ul li a img {
+  vertical-align: middle;
+  /* height: 50px; */
+  width: 25px; /* 图片大小 */
+  margin-right: 5%;
+}
+
+.company {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.company ul {
+  width: 100%;
+  height: 100px;
+}
+
+.company ul li {
+  width: 25%;
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.company ul li a {
+  color: black;
+  font-size: 25px;
+}
+
+.company ul li a img {
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
+  margin-right: 5%;
+}
+
+.data {
+  width: 100%;
+  height: 200px;
+
+  overflow: auto;
+  border: 1.5px solid #e6e6e6;
+}
+
+.data-title {
+  /* height: 50px; */
+  width: 100%;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.sub-title {
+  /* height: 50px; */
+  width: 100%;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: black;
+}
+
+.link-title {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-size: 30px; /* 标题文本大小 */
+  font-weight: bold;
+  margin-top: 25px;
+  color: black;
+}
+
+.data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data table tr {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+}
+
+.data table tr td {
+  border: 1.5px solid #e6e6e6;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+}
+
+.data table tr:hover {
+  background-color: #f2f2f2;
+}
+
+p {
+  font-size: 20px;
+  text-indent: 2em;
+}
+
+.sub ul {
+  padding: 25px;
+}
+
+.sub ul li {
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.copy {
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 95%;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+  text-wrap: nowrap;
+}
+
+.btn button {
+  width: 80px;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 15px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+.text textarea {
+  width: 100%;
+
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 45%;
+  outline: none;
+  text-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.flex-td {
+  display: flex;
+  align-items: center;
+}
+
+.td-title {
+  margin-right: 10px;
+}
+
+.td-title,
+.td-button {
+  font-size: 20px;
+}
+
+.icon-button {
+  color: black;
+  background: none; /* 设置背景为透明 */
+  border: none; /* 去除边框 */
+  cursor: pointer; /* 显示为手形光标，表示可点击 */
+  outline: none; /* 去除焦点时的边框 */
+  padding: 5px; /* 可选的内边距，使图标更易点击 */
+  display: inline-block;
+  vertical-align: top; /* 使按钮顶部对齐 */
+}
+
+.icon-button:hover {
+  color: #007bff; /* 鼠标悬停时的颜色，你可以根据需要修改 */
+}
+.icon-button.active {
+  color: #007bff; /* 设置被点击后的颜色为蓝色 */
+}
+.icon-button:last-child {
+  display: block; /* 使降序按钮占据整行 */
+  margin-top: -35px; /* 设置上边距，使降序按钮位于升序按钮的下方 */
+}

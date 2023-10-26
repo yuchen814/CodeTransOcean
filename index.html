@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTransOcean</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header" id="home">
+        <div class="header-main">
+            <div class="logo">
+                <a href="./index.html">CodeTransOcean</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#info">Info</a>
+                    </li>
+                    <li>
+                        <a href="#leadboard">Leadboard</a>
+                    </li>
+                    <li>
+                        <a href="#submission">Submission</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="main">
+        <div class="title" id="info">
+            CodeTransOcean
+        </div>
+        <div class="details">
+            CodeTransOcean, a large-scale comprehensive benchmark that supports the largest variety of programming languages for code translation. CodeTransOcean consists of three novel multilingual datasets, namely, MultilingualTrans supporting translations between multiple popular programming languages, NicheTrans for translating between niche programming languages and popular ones, and LLMTrans for evaluating executability of translated code by large language models (LLMs). CodeTransOcean also includes a novel cross-framework dataset, DLTrans, for translating deep learning code across different frameworks.
+        </div>
+
+        <div class="link-title">
+            Related Links
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <div style="border: 1.5px solid black; width: 80%; margin: 0 auto; height: 30px; line-height: 30px; border-radius: 5px;">
+                        <a href="https://github.com/WeixiangYAN/CodeTransOcean" style="display: block; height: 100%; line-height: 30px; text-decoration: none; color: inherit;">
+                            <img src="./images/github.svg" alt="" style="vertical-align: middle;"> Github
+                        </a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div style="border: 1.5px solid black; width: 80%; margin: 0 auto; height: 30px; line-height: 30px; border-radius: 5px;">
+                        <a href="https://arxiv.org/abs/2310.04951" style="display: block; height: 100%; line-height: 30px; text-decoration: none; color: inherit;">
+                            <img src="./images/paper.png" alt="" style="vertical-align: middle;"> Paper
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div style="border: 1.5px solid black; width: 80%; margin: 0 auto; height: 30px; line-height: 30px; border-radius: 5px;">
+                        <a href="" style="display: block; height: 100%; line-height: 30px; text-decoration: none; color: inherit;">
+                            <img src="./images/video.png" alt="" style="vertical-align: middle;"> Video
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div style="border: 1.5px solid black; width: 80%; margin: 0 auto; height: 30px; line-height: 30px; border-radius: 5px;">
+                        <a href="https://huggingface.co/datasets/WeixiangYan/CodeTransOcean/tree/main" style="display: block; height: 100%; line-height: 30px; text-decoration: none; color: inherit;">
+                            <img src="./images/hugging.svg" alt="" style="vertical-align: middle;"> HuggingFace
+                        </a>
+                    </div>
+                </li>
+                
+
+            </ul>
+        </div>
+        <div style="clear: both;">
+
+        </div>
+        <div class="data-title" id="leadboard">
+            MultilingualTrans
+        </div>
+        <div class="data">
+
+            <table id="myTable1">
+                <thead>
+                    <tr style="background-color: #F2F2F2;">
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Rank</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 0, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 0, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Model</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 1, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 1, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Organization</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 2, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 2, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Date</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 3, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 3, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">BlEU</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 4, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable1', 4, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td style="color:skyblue">CodeT5+ (One-to-Many)</td>
+                        <td>Salesforce Research</td>
+                        <td>2023-05</td>
+                        <td>6.42</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="color:skyblue">CodeT5+ (Many-to-Many)</td>
+                        <td>Salesforce Research</td>
+                        <td>2023-05</td>
+                        <td>5.81</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td style="color:skyblue">CodeT5+ (Many-to-One)</td>
+                        <td>Salesforce Research</td>
+                        <td>2023-05</td>
+                        <td>5.31</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td style="color:skyblue">CodeT5+ (One-to-One)</td>
+                        <td>Salesforce Research</td>
+                        <td>2023-05</td>
+                        <td>5.19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-title">
+            NicheTrans (Many-to-Many)
+        </div>
+        <div class="data">
+
+            <table id="myTable2">
+                <thead>
+                    <tr style="background-color: #F2F2F2;">
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Rank</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 0, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 0, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Model</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 1, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 1, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Organization</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 2, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 2, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Date</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 3, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 3, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">BLEU</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 4, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable2', 4, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td style="color:skyblue">CodeT5+</td>
+                        <td>Salesforce Research</td>
+                        <td>2023-05</td>
+                        <td>3.92</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="color:skyblue">Naive</td>
+                        <td>CodeTransOcean Team</td>
+                        <td>2023-06</td>
+                        <td>2.76</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="data-title">
+            LLMTrans
+        </div>
+        <div class="data">
+
+            <table id="myTable3">
+                <thead>
+                    <tr style="background-color: #F2F2F2;">
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Rank</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 0, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 0, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Model</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 1, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 1, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Organization</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 2, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 2, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Date</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 3, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 3, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">DSR</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 4, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable3', 4, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td style="color:skyblue">GPT-3.5 (3rd Debug)</td>
+                        <td>OpenAI</td>
+                        <td>2023-03</td>
+                        <td>52.57%</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td style="color:skyblue">GPT-3.5 (One-shot)</td>
+                        <td>OpenAI</td>
+                        <td>2023-03</td>
+                        <td>50.29%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td style="color:skyblue">GPT-3.5 (Zero-shot)</td>
+                        <td>OpenAI</td>
+                        <td>2023-03</td>
+                        <td>48.57%</td>
+                    </tr>                    
+                    <tr>
+                        <td>4</td>
+                        <td style="color:skyblue">GPT-3.5 (CoT)</td>
+                        <td>OpenAI</td>
+                        <td>2023-03</td>
+                        <td>48.29%</td>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="data-title">
+            DLTrans (Many-to-Many)
+        </div>
+        <div class="data">
+
+            <table id="myTable4">
+                <thead>
+                    <tr style="background-color: #F2F2F2;">
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Rank</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 0, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 0, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Model</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 1, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 1, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Organization</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 2, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 2, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">Date</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 3, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 3, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">EM</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 4, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 4, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">BlEU</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 5, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 5, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="flex-td">
+                            <span class="td-title">CodeBlEU</span>
+                            <span class="td-button">
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 6, true); setActiveButton(this)"> <i class="fas fa-sort-up fa-sm"></i></button>
+                              <button class="icon-button" onclick="sortTableByColumn('myTable4', 6, false); setActiveButton(this)"> <i class="fas fa-sort-down fa-sm"></i></button>
+                            </span>
+                          </span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td style="color:skyblue">CodeT5+</td>
+                        <td>Salesforce Research</td>
+                        <td>2023-05</td>
+                        <td>35.35</td>
+                        <td>75.53</td>
+                        <td>75.29</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="color:skyblue">Naive</td>
+                        <td>CodeTransOcean Team</td>
+                        <td>2023-06</td>
+                        <td>28.48</td>
+                        <td>68.44</td>
+                        <td>72.57</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+  <div id="submission" class="sub-title">
+    CodeTransOcean Submission Instructions
+  </div>
+  <div class="sub">
+    <p>
+        When you build a language model that meets your expectations, you can submit your test results for official reporting. To submit your model evaluation results on CodeTransOcean, please submit the following information:
+    </p>
+<p>
+       1. The evaluation results of your language model on each task of the CodeTransOcean benchmark, please follow the evaluation metrics in our paper. <b>[Required] </b>
+    </p>
+        <p>
+            2. Individual/Team Organization: The name of the organization where the individual or team appears in the leaderboard. <b>[Required] </b>
+        </p>
+       <p>
+            3. Training code for your large language model. <b>[Recommended]</b>
+       </p>
+        <p>
+            4. Information about your large language model: The name of the model/method that appears in the leaderboard. <b>[Required] </b>
+        </p>
+        <p>
+            5. Your paper information: If the model is from a published work, the name and URL of the paper will appear on the leaderboard. <b>[Recommended]</b>
+        </p>
+    </ul>
+    <p>
+        Submit the above information by email to <b> yanweixiang.ywx@gmail.com </b> and we will respond to your email within 72 hours.
+    </p>
+  </div>
+  <div id="submission" class="sub-title">
+    How to cite
+  </div>
+  <div class="copy">
+           <div class="btn">
+             <button onclick="copy()"> copy</button>
+           </div>
+           <div style="" class="text" >
+            <textarea  style="height: 35%;text-wrap: nowrap;
+            overflow-x: scroll;"  name="" id="copy" cols="30" rows="10">
+                @article{yan2023codetransocean,
+                    title={CodeTransOcean: A Comprehensive Multilingual Benchmark for Code Translation},
+                    author={Yan, Weixiang and Tian, Yuchen and Li, Yunzhe and Chen, Qian and Wang, Wen},
+                    journal={arXiv preprint arXiv:2310.04951},
+                    year={2023}
+                  }
+            </textarea>
+           </div>
+           <script type="text/javascript">
+
+            function setActiveButton(button) {
+                // 获取所有的icon-button元素
+                var buttons = document.querySelectorAll('.icon-button');
+                // 移除所有按钮的'active'类
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+                // 为被点击的按钮添加'active'类
+                button.classList.add('active');
+            }
+
+
+            function sortTableByColumn(tableId, columnIndex, isAsc) {
+                var table, rows, switching, i, x, y, shouldSwitch;
+                table = document.getElementById(tableId);
+                switching = true;
+                while (switching) {
+                    switching = false;
+                    rows = table.rows;
+                    for (i = 1; i < (rows.length - 1); i++) {
+                        shouldSwitch = false;
+                        x = rows[i].getElementsByTagName("TD")[columnIndex];
+                        y = rows[i + 1].getElementsByTagName("TD")[columnIndex];
+                        if (isAsc) {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                    }
+                }
+            }
+
+            function copy() {
+                var copy = document.getElementById("copy");
+                copy.select(); 
+                document.execCommand("Copy"); 
+            }
+        </script>
+
+  </div>
+    </div>
+</body>
+
+</html>
